@@ -13,22 +13,23 @@ WARNING:
     and ensure you have proper backups before running this script.
 */
 
+-- Connect to the default database
+\c postgres;
+
 -- Drop and recreate the 'DataWarehouse' database
 DO $$ 
 BEGIN
-   IF EXISTS (SELECT 1 FROM pg_database WHERE datname = 'DataWarehouse') THEN
-      PERFORM pg_terminate_backend(pid) 
-      FROM pg_stat_activity 
-      WHERE datname = 'DataWarehouse';
-      EXECUTE 'DROP DATABASE DataWarehouse';
-   END IF;
+    IF EXISTS (SELECT 1 FROM pg_database WHERE datname = 'DataWarehouse') THEN
+        PERFORM pg_terminate_backend(pid) FROM pg_stat_activity WHERE datname = 'DataWarehouse';
+        EXECUTE 'DROP DATABASE DataWarehouse';
+    END IF;
 END $$;
 
 -- Create the 'DataWarehouse' database
-CREATE DATABASE DataWarehouse;
+CREATE DATABASE "DataWarehouse";
 
 -- Connect to the 'DataWarehouse' database
-\c DataWarehouse
+\c DataWarehouse;
 
 -- Create Schemas
 CREATE SCHEMA bronze;
