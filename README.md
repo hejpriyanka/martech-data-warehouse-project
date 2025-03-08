@@ -54,6 +54,11 @@ The project includes a Streamlit app that provides various visualizations and in
 
 The Streamlit app also displays sample data from the fact_sales, dim_products, and dim_customers tables to give viewers an idea of the raw data used in the project.
 
+## Credits
+
+Special thanks to [Baraa](https://www.datawithbaraa.com/) for his teachings which greatly contributed to the understanding of concepts & completion of this project.
+
+
 ## License
 
 This project is licensed under the MIT License.
