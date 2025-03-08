@@ -48,7 +48,7 @@ The Gold layer contains the final dimension and fact tables, organized in a star
 
 The project includes a Streamlit app that provides various visualizations and insights based on the data. You can explore the visualizations at the following link:
 
-[Martech Data Warehouse Streamlit App](https://priya-martech-data-warehouse.streamlit.app/)
+[Martech Data Warehouse Streamlit App](https://martech-data-warehouse-project.streamlit.app/)
 
 ## Sample Data
 
