@@ -41,7 +41,7 @@ BEGIN
     TRUNCATE TABLE bronze.crm_cust_info;
     RAISE NOTICE '>> Inserting Data Into: bronze.crm_cust_info';
     COPY bronze.crm_cust_info
-    FROM '/Users/venkatakrishna/Career/sql_project/sql-data-warehouse-project/datasets/source_crm/cust_info.csv'
+    FROM '/Users/priyanka/Career/sql_project/sql-data-warehouse-project/datasets/source_crm/cust_info.csv'
     WITH (
         FORMAT csv,
         HEADER true,
@@ -58,7 +58,7 @@ BEGIN
     TRUNCATE TABLE bronze.crm_prd_info;
     RAISE NOTICE '>> Inserting Data Into: bronze.crm_prd_info';
     COPY bronze.crm_prd_info
-    FROM '/Users/venkatakrishna/Career/sql_project/sql-data-warehouse-project/datasets/source_crm/cust_info.csv'
+    FROM '/Users/priyanka/Career/sql_project/sql-data-warehouse-project/datasets/source_crm/cust_info.csv'
     WITH (
         FORMAT csv,
         HEADER true,
@@ -75,7 +75,7 @@ BEGIN
     TRUNCATE TABLE bronze.crm_sales_details;
     RAISE NOTICE '>> Inserting Data Into: bronze.crm_sales_details';
     COPY bronze.crm_sales_details
-    FROM '/Users/venkatakrishna/Career/sql_project/sql-data-warehouse-project/datasets/source_crm/cust_info.csv'
+    FROM '/Users/priyanka/Career/sql_project/sql-data-warehouse-project/datasets/source_crm/cust_info.csv'
     WITH (
         FORMAT csv,
         HEADER true,
@@ -96,7 +96,7 @@ BEGIN
     TRUNCATE TABLE bronze.erp_loc_a101;
     RAISE NOTICE '>> Inserting Data Into: bronze.erp_loc_a101';
     COPY bronze.erp_loc_a101
-    FROM '/Users/venkatakrishna/Career/sql_project/sql-data-warehouse-project/datasets/source_crm/cust_info.csv'
+    FROM '/Users/priyanka/Career/sql_project/sql-data-warehouse-project/datasets/source_crm/cust_info.csv'
     WITH (
         FORMAT csv,
         HEADER true,
@@ -113,7 +113,7 @@ BEGIN
     TRUNCATE TABLE bronze.erp_cust_az12;
     RAISE NOTICE '>> Inserting Data Into: bronze.erp_cust_az12';
     COPY bronze.erp_cust_az12
-    FROM '/Users/venkatakrishna/Career/sql_project/sql-data-warehouse-project/datasets/source_crm/cust_info.csv'
+    FROM '/Users/priyanka/Career/sql_project/sql-data-warehouse-project/datasets/source_crm/cust_info.csv'
     WITH (
         FORMAT csv,
         HEADER true,
@@ -130,7 +130,7 @@ BEGIN
     TRUNCATE TABLE bronze.erp_px_cat_g1v2;
     RAISE NOTICE '>> Inserting Data Into: bronze.erp_px_cat_g1v2';
     COPY bronze.erp_px_cat_g1v2
-    FROM '/Users/venkatakrishna/Career/sql_project/sql-data-warehouse-project/datasets/source_crm/cust_info.csv'
+    FROM '/Users/priyanka/Career/sql_project/sql-data-warehouse-project/datasets/source_crm/cust_info.csv'
     WITH (
         FORMAT csv,
         HEADER true,
